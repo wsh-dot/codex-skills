@@ -1,0 +1,4 @@
+interface:
+  display_name: "C Concept HTML Guides"
+  short_description: "Build polished C concept HTML lessons"
+  default_prompt: "Use $building-c-concept-html-guides to create a polished HTML lesson for a C programming concept."
