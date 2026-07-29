@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clarify Search"
+  short_description: "Clarify intent for evidence-backed web and image research"
+  default_prompt: "Use $clarify-search to clarify my goal and run scoped, evidence-backed research with Doubao Search."
