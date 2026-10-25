@@ -27,6 +27,32 @@
 包含可视化图解、可运行示例、常见错误、响应式 QA 和可选的
 Cloudflare Pages 部署检查。
 
+### ecpt5-to-excel
+
+`ecpt5-to-excel` 将 EC5 / 长庆设计造价编审软件的 `.ecpt5` 定概项目分别导出为
+Excel，支持风电、光伏和 CBS 结构。
+
+- 20 列树结构，含工程、分部、定额、主材与设备
+- 定额人材机、项目其他费用、工程核对和来源说明
+- 保留源金额及计算式文本，损坏工程明确标注部分导出
+- 独立 Skill Judge：**A，110/120**；8 项边界自检通过
+- 实际导出与历史交付比对：278,028 个数据单元格一致
+
+运行环境需要 JDK 17+、Python，以及 Codex 提供的
+`@oai/artifact-tool` 工作区依赖；解析所需 db4o JAR 已随技能提供。
+
+安装地址：
+
+```text
+https://github.com/wsh-dot/codex-skills/tree/main/skills/ecpt5-to-excel
+```
+
+只安装上述 Skill 子目录，保留 `SKILL.md`、`agents/`、`references/`、
+`scripts/`、`assets/`。安装后上传 ecpt5 并要求“导出为 Excel”，
+或显式调用 `$ecpt5-to-excel`。
+
+[安装与使用说明](docs/ecpt5-to-excel.md) · [评审与验证摘要](docs/reviews/ecpt5-to-excel.md)
+
 ## 最推荐的安装方式
 
 如果你的 AI 编程软件支持从 GitHub 安装 Skill，请优先使用对应的

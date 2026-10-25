@@ -1,0 +1,6 @@
+interface:
+  display_name: "ECPT5 转 Excel"
+  short_description: "导出EC5定概项目的预算树、人材机和费用，核对源金额并标注读取异常"
+  default_prompt: "使用 $ecpt5-to-excel 将我上传的 ecpt5 文件分别导出为包含树结构与核对说明的 Excel。"
+policy:
+  allow_implicit_invocation: true
