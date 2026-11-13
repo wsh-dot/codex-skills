@@ -1,0 +1,4 @@
+interface:
+  display_name: "动态来源审查与修订循环"
+  short_description: "根据提示词定位有用来源，逐项审查并反馈修订，通过后输出终版"
+  default_prompt: "使用 $prompt-review-loop，先根据我的提示词定位和读取必要来源，再审查 Gemini 内容并循环反馈修改，只在审查通过后输出终版。"
